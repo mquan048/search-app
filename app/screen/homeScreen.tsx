@@ -4,6 +4,7 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import RootStackParamList from "@/types/routes";
 
 const HomeScreen = () => {
+    
     const navigation =
         useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
