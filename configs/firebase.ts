@@ -11,10 +11,8 @@ const firebaseConfig = {
   measurementId: process.env.EXPO_PUBLIC_MEASUREMENT_ID
 };
 
-// Khởi tạo Firebase
 const app = initializeApp(firebaseConfig);
 
-// Khởi tạo Firestore
 const db = getFirestore(app);
 
 export default db;
