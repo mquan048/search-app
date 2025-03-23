@@ -1,14 +1,11 @@
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './screen/homeScreen';
-import DetailScreen from './screen/detailScreen';
+import { Stack } from "expo-router";
 
-const Stack = createNativeStackNavigator();
-
-export default function RootLayout() {
+const RootLayout = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
-      <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Detail" component={DetailScreen} />
-    </Stack.Navigator>
+    <Stack>
+      <Stack.Screen name="index" options={{ headerShown: false }} />
+    </Stack>
   );
-}
+};
+
+export default RootLayout;

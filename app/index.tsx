@@ -1,12 +1,14 @@
-import { NavigationContainer } from "@react-navigation/native";
-import RootLayout from "./_layout";
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screen/homeScreen';
+import DetailScreen from './screen/detailScreen';
 
-const App = () => {
-    return (
-        <NavigationContainer>
-            <RootLayout />
-        </NavigationContainer>
-    );
-};
+const Stack = createNativeStackNavigator();
 
-export default App;
+export default function RootLayout() {
+  return (
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={HomeScreen} options={{headerShown: false}}/>
+      {/* <Stack.Screen name="Detail" component={DetailScreen} /> */}
+    </Stack.Navigator>
+  );
+}
