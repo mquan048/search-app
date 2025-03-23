@@ -69,5 +69,4 @@ After executing the above command, you will see a QR code appear in the terminal
 ## Features
 
 - Search for information by keywords
-- Save search history
 - User-friendly and easy-to-use interface
