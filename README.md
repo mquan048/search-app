@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Search App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Introduction
 
-## Get started
+Search App is a mobile application developed using React Native and Expo, allowing users to search for information quickly and easily. The app supports various search features and provides a smooth user experience.
 
-1. Install dependencies
+## Getting Started
+
+To start developing and running this application, you need to follow these steps:
+
+### Prerequisites
+
+Before you begin, make sure you have the following tools installed:
+
+- [Node.js](https://nodejs.org/) (version 14 or above)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/) (install using the command `npm install -g expo-cli`)
+- [Firestore Documentation](https://firebase.google.com/docs/firestore)
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/mquan048/search-app.git
+   cd search-app
+   ```
+
+2. **Install dependencies**:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+### Setting Up the .env File
+
+1. **Create the .env file**:
+
+   Create a file named `.env` in the root directory of the project:
 
    ```bash
-    npx expo start
+   touch .env
    ```
 
-In the output, you'll find options to open the app in a
+2. **Add environment variables**:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   Open the `.env` file and add the necessary environment variables according to the `.env.example` file:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   ```env
+   # Config Firebase Firestore
+   EXPO_PUBLIC_API_KEY=
+   EXPO_PUBLIC_AUTH_DOMAIN=
+   EXPO_PUBLIC_PROJECT_ID=
+   EXPO_PUBLIC_STORAGE_BUCKET=
+   EXPO_PUBLIC_MESSAGING_SENDER_ID=
+   EXPO_PUBLIC_APP_ID=
+   EXPO_PUBLIC_MEASUREMENT_ID=
+   ```
 
-## Get a fresh project
+### Running the Application
 
-When you're ready, run:
+To run the application on a device or emulator, use the following command:
 
 ```bash
-npm run reset-project
+expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+After executing the above command, you will see a QR code appear in the terminal. You can scan this code using the Expo Go app on your phone to view the application.
 
-## Learn more
+## Features
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Search for information by keywords
+- Save search history
+- User-friendly and easy-to-use interface
