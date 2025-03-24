@@ -54,6 +54,9 @@ const HomeScreen = () => {
       <SearchBar searchDoc={queryDoc}></SearchBar>
       <FlatList
         data={docs}
+        initialNumToRender={7}
+        maxToRenderPerBatch={7}
+        windowSize={5}
         renderItem={(doc) => (
           <DocItem
             name={doc.item.name}
@@ -63,12 +66,12 @@ const HomeScreen = () => {
         )}
         onEndReached={() => getNextDocuments(kString)}
       />
-
+      {/* 
       <Pagination
         currentPage={currentPage}
         totalPages={totaltPages}
         onPageChange={onPageChange}
-      />
+      /> */}
       <FooterComponent />
     </>
   );

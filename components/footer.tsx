@@ -11,14 +11,15 @@ const FooterComponent = () => {
 };
 const styles = StyleSheet.create({
   foot_con: {
-    borderTopColor: "lightgray",
-    borderTopWidth: 2,
+    // borderTopColor: "lightgray",
+    // borderTopWidth: 2,
     fontSize: 20,
     justifyContent: "center",
     height: 60,
     paddingLeft: 20,
     paddingRight: 20,
     bottom: 0,
+    marginTop: 20,
   },
   footText: {
     textAlign: "center",
